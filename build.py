@@ -34,6 +34,8 @@ def fill_template(content_file):
 # Title our page based on the content
 def make_banner(out, title_string):
     sub_title = title_string.split('.')
+    if sub_title[0] == 'index':
+        sub_title[0] = 'home'
     banner_string = '<h2>Kevin Claytor: %s</h2>\n' % (sub_title[0])
     out.write(banner_string)
 
