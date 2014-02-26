@@ -14,11 +14,13 @@ a:link {color:#694AFF}
 a:visited {color:#AF9EFF}
 a:active {color: #7357FF}
 
-
-h1 {color:#7B4500}
+/* Page title */
+h1 {color: #B50000}
+/* Main title */
 h2 {
-    color:white;
-    font-size:300%
+    color: white;
+    font-size: 300%;
+    vertical-align: text-top;
 }
 hr {color:#7B4500}
 
@@ -26,7 +28,9 @@ font.darkbg {color:#FFD175}
 font.lightbg {color:#3C5693}
 
 /* show borders for debugging */
-div {border: 1px dotted gray; padding: 0}
+/* 
+ * div {border: 1px dotted gray; padding: 0}
+ *  */
 
 /* Main div sections */
 #wrapper {
@@ -44,7 +48,6 @@ div {border: 1px dotted gray; padding: 0}
     margin: 0;
     padding-top: 0;
     padding-left: 100px;
-    vertical-align: text-middle;
     background-image: url("images/bannermain.jpg");
     background-repeat: no-repeat;
     background-color: black;
@@ -69,6 +72,7 @@ div {border: 1px dotted gray; padding: 0}
     top: 100px;
     left: 200px;
     right: 400px;
+    padding: 20px;
     background-color: white;
     text-align: left;
     margin-left: 0;
