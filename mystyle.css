@@ -5,33 +5,36 @@
 }
 
 body {
-    background-color:#000000;
+    background-color:white;
     margin:0;
     padding:0;
     font-size: 100%;
 }
 
-a:link {color:#694AFF}
-a:visited {color:#AF9EFF}
-a:active {color: #7357FF}
+//a.nav:link {color:#FFFFFF}
+//a.nav:visited {color:#8f0000}
+//a.nav:active {color: #7357FF}
 
 /* Page title */
-h1 {color: #B50000}
-/* Main title */
-h2 {
+h1 {
     color: white;
-    font-size: 300%;
-    vertical-align: text-top;
+    font-size: 3.0em;
+    margin: 0;
+    padding: 0;
 }
-hr {color:#7B4500}
+/* Subtitles */
+h2 {color: #B50000;
+    font-size: 3.0em;
+    margin: 0;
+    padding: 0;
+}
+//hr {color:#7B4500}
 
-font.darkbg {color:#FFD175}
-font.lightbg {color:#3C5693}
+//p.darkbg {color:#FFD175}
+//p.lightbg {color:#3C5693}
 
 /* show borders for debugging */
-/* 
- * div {border: 1px dotted gray; padding: 0}
- *  */
+//div {border: 1px dotted gray; padding: 0}
 
 /* Main div sections */
 #wrapper {
@@ -63,7 +66,8 @@ font.lightbg {color:#3C5693}
     width: 200px;
     bottom: 0px;
     margin: 0;
-    background-color:#262626;
+    padding: 0;
+    background-color:#000000;
     text-align:left;
     font-family: 'Exo 2', sans-serif;
 }
@@ -80,42 +84,72 @@ font.lightbg {color:#3C5693}
     margin-right: auto;
     z-index: 5;
 }
-#photobar {
+
+#photo {
     position: fixed;
     top: 100px;
     right: 0px;
-    width: 400;
+    width: 400px;
     margin: 0;
     padding: 0;
     background-color: black;
+    z-index: 7;
+}
+
+#contactbar {
+    position: fixed;
+    top: 500px;
+    right: 0px;
+    width: 400px;
+    bottom: 0px;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    z-index: 6;
 }
 
 /* Navigation List Setup */
-#nav ul {
+ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     border: none;
 }
-#nav li {
+li.nav {
     margin: 0;
     padding: 0;
     border-top: 0;
     width: 100%;
     display: block;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
-#navsub ul {
+li.nav a:link {color:#000000}
+li.nav a:visited {color:#FFFFFF}
+.navsub ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     border: none;
 }
-#navsub li {
+.navsub li {
     margin: 0;
     padding-left: 20px;
     border-top: 0;
     width: 90%;
     display: block;
     font-size: 1.2em;
+}
+.navsubsub ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.navsubsub li {
+    margin: 0;
+    padding-left: 40px;
+    border-top: 0;
+    width: 80%;
+    display: block;
+    font-size: 1.0em;
 }
