@@ -28,7 +28,7 @@ def fill_template(sourcefile):
         navbar = open('source/__navbar__.html')
 
     # Open the file we are writing to
-    out = open(content_file,'w')
+    out = open(os.path.join('out',content_file),'w')
     for template_line in template:
         if '<!--ANALYTICS--!>' in template_line:
             for analytics_line in analytics:

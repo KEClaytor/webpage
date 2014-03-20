@@ -11,30 +11,31 @@ body {
     font-size: 100%;
 }
 
-//a.nav:link {color:#FFFFFF}
-//a.nav:visited {color:#8f0000}
-//a.nav:active {color: #7357FF}
+/* show borders for debugging */
+/* SUPER USEFUL! */
+//div {border: 1px dotted gray; padding: 0}
 
-/* Page title */
+/* Main Title over imagebar */
 h1 {
     color: white;
     font-size: 3.0em;
     margin: 0;
     padding: 0;
 }
-/* Subtitles */
+/* In-page header */
 h2 {color: #B50000;
     font-size: 3.0em;
     margin: 0;
     padding: 0;
 }
+/* sub-headers */
+h3 {color: #B50000;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
 //hr {color:#7B4500}
-
-//p.darkbg {color:#FFD175}
-//p.lightbg {color:#3C5693}
-
-/* show borders for debugging */
-//div {border: 1px dotted gray; padding: 0}
 
 /* Main div sections */
 #wrapper {
@@ -59,23 +60,29 @@ h2 {color: #B50000;
     z-index:10;
 }
 
-#nav {
+.nav {
     position: fixed;
     top: 100px;
     left: 0px;
     width: 200px;
     bottom: 0px;
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
     background-color:#000000;
     text-align:left;
     font-family: 'Exo 2', sans-serif;
+}
+.nav li a{
+    color:#FFFFFF;
+}
+.nav li a:visited{
+    color:#3F577F;
 }
 
 #content {
     position: absolute;
     top: 100px;
-    left: 200px;
+    left: 220px;
     right: 400px;
     padding: 20px;
     background-color: white;
@@ -109,13 +116,13 @@ h2 {color: #B50000;
 }
 
 /* Navigation List Setup */
-ul.nav {
+.nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     border: none;
 }
-li.nav {
+.nav li{
     margin: 0;
     padding: 0;
     border-top: 0;
@@ -123,8 +130,7 @@ li.nav {
     display: block;
     font-size: 1.5em;
 }
-li.nav a:link {color:#000000}
-li.nav a:visited {color:#FFFFFF}
+
 .navsub ul {
     list-style-type: none;
     margin: 0;
@@ -139,6 +145,7 @@ li.nav a:visited {color:#FFFFFF}
     display: block;
     font-size: 1.2em;
 }
+
 .navsubsub ul {
     list-style-type: none;
     margin: 0;
