@@ -75,8 +75,11 @@ h3 {color: #B50000;
 .nav li a{
     color:#FFFFFF;
 }
-.nav li a:visited{
+.nav li a:hover{
     color:#3F577F;
+}
+.nav li a:visited{
+    color:#FFFFFF;
 }
 
 #content {

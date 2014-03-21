@@ -5,15 +5,38 @@
 <iframe width="560" height="315" src="//www.youtube.com/embed/sYB8JDeaNaA" frameborder="0" allowfullscreen></iframe>
 <p><h3>Nonlinear Oscillator</h3></p>
 <p>One of the coolest things that I like about physics is how accessible it can be with some fairly simple experiments. 
-Here I've built a pendulum out of Legos, it has a rubber band to provide a damping force, and a motor to drive it. 
-Despite its relative simplicity, we can observe some fairly complicated behavior, such as bifurcation 
-(different behavior for the same conditions).</p>
-<p>As a project for a nonlinear dynamics class I took, I constructed this driven, damped oscillator. 
-It exhibits hysteresis in the resonance frequency. 
-For example, if you increase the frequency that you're driving it at, 
-you won't always get the same amplitude of oscillation as if you had reached 
-the same frequency by decreasing the drive frequency from something higher.</p>
-<br/>Here's the <link>final report</link>.
-<br/>You can download the <link>video analysis code here</link>.
-<br/>Here's a video of the oscillator, along with the tracking of the dots, and the illustration of the hysteresis effect:
-
+ Here I've built a driven pendulum out of Legos.
+ The drive arm is connected to the oscillator via a rubber band.
+ The oscillator arm itself is damped through the friction of the LEGOs.</p>
+<p>Despite its relative simplicity, we can observe some fairly complicated behavior, such as bifurcation 
+(different behavior for the same conditions).
+ For small displacements of the drive arm, the rubber band applies a linear force and the oscillator arm follows it exactly.
+ But when the drive amplitude increases the rubber band provides a nonlinear force and more complicated behavior ensues.
+ First, it goes through resonance, where the amplitude of the oscillator arm increases with the frequency of the drive arm as the frequency increases up to resonance.
+ After this point, although the frequency of the drive arm continues to increase the oscillator arm amplitude does not.
+ Additionally, it exhbiits bifurcation:
+ At a frequency near resonance the amplitude of the driven oscillator can be different depending if you have reached that point by;
+ increasing or decreasing the frequency.
+</p>
+<p>Here's a video of it running at a specific frequency.</p>
+<iframe width="420" height="315" src="//www.youtube.com/embed/c9dRzkTv5jc" frameborder="0" allowfullscreen></iframe>
+<p>Unfortunately, I seem to have misplaced the final report.
+ In the meantime you can download the <a href="mfiles/nonlinear/VideoAnalysis.m">video analysis code here</a>.
+ And a pair of Mathematica analysis files (<a href="mfiles/nonlinear/Analysis.nb">one</a> and
+ <a href="mfiles/nonlinear/ProjectSimulations.nb">two</a>).
+</p>
+<p>
+ Here are some processing images so you can see how it is done (thrsholding and following the green dot).
+ <br/> <img src="images/nonlinear/processing1.jpg"></img>
+ <br/>We isolate the region of interest (ROI).
+ <br/> <img src="images/nonlinear/processing2.jpg"></img>
+ <br/>Just the green channel of the ROI (I later learned that [RGB -0.5*R -0.5*B] is a better way of obtaining green color information).
+ <br/> <img src="images/nonlinear/processing3.jpg"></img>
+ <br/>Adjusting for full dynamic range.
+ <br/> <img src="images/nonlinear/processing4.jpg"></img>
+ <br/>A threshold allows us to isolate the marker.
+ <br/> <img src="images/nonlinear/processing5.jpg"></img>
+ <br/>Finally we have the location of the markers in all the frames.
+ <br/> <img src="images/nonlinear/dampeddata.jpg"></img>
+ <br/>Here's an example of the quality of the data you can extract from this simple setup.
+</p>
