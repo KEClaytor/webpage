@@ -5,15 +5,15 @@
 }
 
 body {
-    background-color:white;
-    margin:0;
-    padding:0;
+    background-color: white;
+    margin: 0;
+    padding: 0;
     font-size: 100%;
 }
 
 /* show borders for debugging */
 /* SUPER USEFUL! */
-//div {border: 1px dotted gray; padding: 0}
+//div {border: 1px dotted gray; padding: 0;}
 
 /* Main Title over imagebar */
 h1 {
@@ -60,28 +60,6 @@ h3 {color: #B50000;
     z-index:10;
 }
 
-.navbar {
-    position: fixed;
-    top: 100px;
-    left: 0px;
-    width: 200px;
-    bottom: 0px;
-    margin: 0;
-    padding-left: 10px;
-    background-color:#000000;
-    text-align:left;
-    font-family: 'Exo 2', sans-serif;
-}
-.nav li a{
-    color:#FFFFFF;
-}
-.nav li a:hover{
-    color:#3F577F;
-}
-.nav li a:visited{
-    color:#FFFFFF;
-}
-
 .content {
     position: absolute;
     top: 100px;
@@ -119,48 +97,46 @@ h3 {color: #B50000;
 }
 
 /* Navigation List Setup */
-.nav ul{
-    list-style-type: none;
+.navbar {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    width: 200px;
+    bottom: 0px;
     margin: 0;
     padding: 0;
-    border: none;
+    border: 0;
+    background-color: black;
+    text-align: left;
+    font-family: 'Exo 2', sans-serif;
 }
-.nav li{
+.navbar ul {
     margin: 0;
     padding: 0;
-    border-top: 0;
+    list-style-type: none;
+}
+.navbar li a{
+    color:#FFFFFF;
+}
+.navbar li a:visited{
+    color:#FFFFFF;
+}
+.navbar li a:hover{
+    color:#3F577F;
+}
+/* Define offsets and font sizes for nesting */
+.nav li{
     width: 100%;
-    display: block;
     font-size: 1.5em;
 }
-
-.navsub ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: none;
-}
 .navsub li {
-    margin: 0;
     padding-left: 20px;
-    border-top: 0;
     width: 90%;
-    display: block;
     font-size: 1.2em;
 }
-
-.navsubsub ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: none;
-}
 .navsubsub li {
-    margin: 0;
     padding-left: 40px;
-    border-top: 0;
     width: 80%;
-    display: block;
     font-size: 1.0em;
 }
 
