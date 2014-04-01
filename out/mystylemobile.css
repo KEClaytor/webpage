@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color:white;
+    background-color:black;
     margin:0;
     padding:0;
     font-size: 100%;
@@ -24,7 +24,7 @@ h1 {
 }
 /* In-page header */
 h2 {color: #B50000;
-    font-size: 3.0em;
+    font-size: 2.0em;
     margin: 0;
     padding: 0;
 }
@@ -44,36 +44,69 @@ h3 {color: #B50000;
     overflow: hidden;
 }
 
+// Use a smaller banner on small screens
 .banner {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 100px;
-    width: 100%;
-    margin: 0;
-    padding-top: 0;
-    padding-left: 100px;
-    background-image: url("images/bannermain.jpg");
-    background-repeat: no-repeat;
-    background-color: black;
-    font-family: 'Exo 2', serif;
-    z-index:10;
+    display: none;
+}
+.in-page-title {
+    display: none;
 }
 
-.navbar {
+.content {
+    position: relative;
+    background-color: white;
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+    z-index: 5;
+}
+
+// Hide the photobar on small screens
+.photobar {
+    display: none;
+}
+.photo {
+    display: none;
+}
+
+// Put at the bottom of the screen.
+.contactbar {
     position: fixed;
-    top: 100px;
     left: 0px;
-    width: 200px;
     bottom: 0px;
+    width: 100%;
     margin: 0;
-    padding-left: 10px;
-    background-color:#000000;
-    text-align:left;
+    padding: 0;
+    background-color: black;
+    z-index: 8;
+}
+
+/* Navigation List Setup */
+.nav {
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+    background-color: Black;
+    text-align: left;
     font-family: 'Exo 2', sans-serif;
+}
+.nav ul{
+    margin: 0;
+    padding: 0;
+    display: inline;
+    border: none;
+}
+.nav li{
+    margin: 0;
+    padding: 2px;
+    border: none;
+    list-style: none;
+    display: inline;
+    font-size: 1.0em;
 }
 .nav li a{
     color:#FFFFFF;
+    display: inline;
 }
 .nav li a:hover{
     color:#3F577F;
@@ -82,85 +115,38 @@ h3 {color: #B50000;
     color:#FFFFFF;
 }
 
-.content {
-    position: absolute;
-    top: 100px;
-    left: 220px;
-    right: 400px;
-    padding: 20px;
-    background-color: white;
-    text-align: left;
-    margin-left: 0;
-    margin-right: auto;
-    z-index: 5;
-}
-
-.photobar {
-    position: fixed;
-    top: 100px;
-    right: 0px;
-    width: 400px;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    z-index: 7;
-}
-
-.contactbar {
-    position: fixed;
-    top: 500px;
-    right: 0px;
-    width: 400px;
-    bottom: 0px;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    z-index: 6;
-}
-
-/* Navigation List Setup */
-.nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-.nav li{
-    margin: 0;
-    padding: 0;
-    border-top: 0;
-    width: 100%;
-    display: block;
-    font-size: 1.5em;
-}
-
 .navsub ul {
+    display: inline;
     list-style-type: none;
     margin: 0;
     padding: 0;
     border: none;
 }
 .navsub li {
+    display: inline;
+    list-style-type: none;
     margin: 0;
     padding-left: 20px;
     border-top: 0;
     width: 90%;
     display: block;
-    font-size: 1.2em;
+    font-size: 0.8em;
 }
 
 .navsubsub ul {
+    display: inline;
     list-style-type: none;
     margin: 0;
     padding: 0;
     border: none;
 }
 .navsubsub li {
+    display: inline;
+    list-style-type: none;
     margin: 0;
     padding-left: 40px;
     border-top: 0;
     width: 80%;
     display: block;
-    font-size: 1.0em;
+    font-size: 0.6em;
 }
-

@@ -52,7 +52,7 @@ def make_banner(out, title_string):
     sub_title = title_string.split('.')
     if sub_title[0] == 'index':
         sub_title[0] = 'home'
-    banner_string = '<h1>Kevin Claytor: %s</h1>\n' % (sub_title[0])
+    banner_string = '<h1 class="in-page-title">Kevin Claytor: %s</h1>\n' % (sub_title[0])
     out.write(banner_string)
 
 # Later generate the navbar programatically
