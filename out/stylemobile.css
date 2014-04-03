@@ -1,152 +1,67 @@
-@import url(http://fonts.googleapis.com/css?family=Exo+2:400,300,200);
-@font-face {
-    font-family: NavFont; /*a name to be used later*/
-    src: url("fonts/ExoThin.otf") format("opentype");
-}
+/* Mobile site overrides */
 
-body {
-    background-color:black;
-    margin:0;
-    padding:0;
-    font-size: 100%;
-}
-
-/* show borders for debugging */
-/* SUPER USEFUL! */
-//div {border: 1px dotted gray; padding: 0}
-
-/* Main Title over imagebar */
-h1 {
-    color: white;
-    font-size: 3.0em;
-    margin: 0;
-    padding: 0;
-}
 /* In-page header */
 h2 {color: #B50000;
     font-size: 2.0em;
     margin: 0;
     padding: 0;
 }
-/* sub-headers */
+/* in-page sub-headers */
 h3 {color: #B50000;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0;
     padding: 0;
 }
 
-//hr {color:#7B4500}
-
 /* Main div sections */
-.wrapper {
-    margin: 0px auto;
-    padding: 0;
-    overflow: hidden;
-}
-
-// Use a smaller banner on small screens
+/* Remove the banner on the mobile site */
 .banner {
-    display: none;
+    padding-left: 0px;
 }
 .in-page-title {
     display: none;
 }
+.in-page-title-basic {
+    display: inline;
+}
 
 .content {
-    position: relative;
-    background-color: white;
-    text-align: left;
-    margin-left: 0;
-    margin-right: auto;
-    z-index: 5;
 }
 
-// Hide the photobar on small screens
+/* Hide the photobar on small screens */
 .photobar {
-    display: none;
-}
-.photo {
-    display: none;
-}
-
-// Put at the bottom of the screen.
-.contactbar {
     position: fixed;
-    left: 0px;
+    top: -9999px;
+    left: -9999px;
+}
+
+/* Put at the bottom of the screen */
+.contactbar {
     bottom: 0px;
+    left: 0px;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    z-index: 8;
 }
 
-/* Navigation List Setup */
-.nav {
-    position: relative;
+/* switch to an inline navbar */
+.navbar {
     width: 100%;
-    padding-left: 0;
-    background-color: Black;
-    text-align: left;
-    font-family: 'Exo 2', sans-serif;
 }
-.nav ul{
-    margin: 0;
-    padding: 0;
+
+.navbar ul {
     display: inline;
-    border: none;
 }
+.navbar li {
+    display: inline;
+}
+
+/* Remove sub-menus for mobile */
 .nav li{
-    margin: 0;
-    padding: 2px;
-    border: none;
-    list-style: none;
-    display: inline;
-    font-size: 1.0em;
-}
-.nav li a{
-    color:#FFFFFF;
-    display: inline;
-}
-.nav li a:hover{
-    color:#3F577F;
-}
-.nav li a:visited{
-    color:#FFFFFF;
-}
-
-.navsub ul {
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: none;
+    font-size: 1.2em;
 }
 .navsub li {
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding-left: 20px;
-    border-top: 0;
-    width: 90%;
-    display: block;
-    font-size: 0.8em;
-}
-
-.navsubsub ul {
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: none;
+    display: none;
 }
 .navsubsub li {
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding-left: 40px;
-    border-top: 0;
-    width: 80%;
-    display: block;
-    font-size: 0.6em;
+    display: none;
 }
+
