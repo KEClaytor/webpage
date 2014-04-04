@@ -35,7 +35,8 @@
     position: fixed;
     top: 100px;
     left: 0px;
-    width: 200px;
+    min-width: 200px;
+    width: auto;
     bottom: 0px;
 }
 
