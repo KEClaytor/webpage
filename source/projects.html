@@ -2,41 +2,49 @@
 <p><h3>Toblerone Clock</h3></p>
 <p>This is a 21 element clock made from toblerone boxes. Powered by a <a href="http://www.raspberrypi.org/">Raspberry Pi</a>, it has a <a href="https://twitter.com/tobleroneclock">twitter account</a> that it monitors and then prints the tweets, character by character, on its clock face.</p>
 <p>You can get the source code off of <a href="https://github.com/KEClaytor/HexPi">GitHub</a>. Here's a cool video of it in action:</p>
-<iframe width="560" height="315" src="//www.youtube.com/embed/sYB8JDeaNaA" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper">
+    <div class="video-container">
+        <iframe width="560" height="315" src="//www.youtube.com/embed/sYB8JDeaNaA" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
 <p><h3>Nonlinear Oscillator</h3></p>
 <p>One of the coolest things that I like about physics is how accessible it can be with some fairly simple experiments. 
- Here I've built a driven pendulum out of Legos.
- The drive arm is connected to the oscillator via a rubber band.
- The oscillator arm itself is damped through the friction of the LEGOs.</p>
+Here I've built a driven pendulum out of Legos.
+The drive arm is connected to the oscillator via a rubber band.
+The oscillator arm itself is damped through the friction of the LEGOs.</p>
 <p>Despite its relative simplicity, we can observe some fairly complicated behavior, such as bifurcation 
 (different behavior for the same conditions).
- For small displacements of the drive arm, the rubber band applies a linear force and the oscillator arm follows it exactly.
- But when the drive amplitude increases the rubber band provides a nonlinear force and more complicated behavior ensues.
- First, it goes through resonance, where the amplitude of the oscillator arm increases with the frequency of the drive arm as the frequency increases up to resonance.
- After this point, although the frequency of the drive arm continues to increase the oscillator arm amplitude does not.
- Additionally, it exhbiits bifurcation:
- At a frequency near resonance the amplitude of the driven oscillator can be different depending if you have reached that point by;
- increasing or decreasing the frequency.
+For small displacements of the drive arm, the rubber band applies a linear force and the oscillator arm follows it exactly.
+But when the drive amplitude increases the rubber band provides a nonlinear force and more complicated behavior ensues.
+First, it goes through resonance, where the amplitude of the oscillator arm increases with the frequency of the drive arm as the frequency increases up to resonance.
+After this point, although the frequency of the drive arm continues to increase the oscillator arm amplitude does not.
+Additionally, it exhbiits bifurcation:
+At a frequency near resonance the amplitude of the driven oscillator can be different depending if you have reached that point by;
+increasing or decreasing the frequency.
 </p>
 <p>Here's a video of it running at a specific frequency.</p>
-<iframe width="420" height="315" src="//www.youtube.com/embed/c9dRzkTv5jc" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper">
+    <div class="video-container">
+        <iframe width="420" height="315" src="//www.youtube.com/embed/c9dRzkTv5jc" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
 <p>Unfortunately, I seem to have misplaced the final report.
- In the meantime you can download the <a href="mfiles/nonlinear/VideoAnalysis.m">video analysis code here</a>.
- And a pair of Mathematica analysis files (<a href="mfiles/nonlinear/Analysis.nb">one</a> and
- <a href="mfiles/nonlinear/ProjectSimulations.nb">two</a>).
+In the meantime you can download the <a href="mfiles/nonlinear/VideoAnalysis.m">video analysis code here</a>.
+And a pair of Mathematica analysis files (<a href="mfiles/nonlinear/Analysis.nb">one</a> and
+<a href="mfiles/nonlinear/ProjectSimulations.nb">two</a>).
 </p>
 <p>
- Here are some processing images so you can see how it is done (thrsholding and following the green dot).
- <br/> <img src="images/nonlinear/processing1.jpg"></img>
- <br/>We isolate the region of interest (ROI).
- <br/> <img src="images/nonlinear/processing2.jpg"></img>
- <br/>Just the green channel of the ROI (I later learned that [RGB -0.5*R -0.5*B] is a better way of obtaining green color information).
- <br/> <img src="images/nonlinear/processing3.jpg"></img>
- <br/>Adjusting for full dynamic range.
- <br/> <img src="images/nonlinear/processing4.jpg"></img>
- <br/>A threshold allows us to isolate the marker.
- <br/> <img src="images/nonlinear/processing5.jpg"></img>
- <br/>Finally we have the location of the markers in all the frames.
- <br/> <img src="images/nonlinear/dampeddata.jpg"></img>
- <br/>Here's an example of the quality of the data you can extract from this simple setup.
+Here are some processing images so you can see how it is done (thrsholding and following the green dot).
+<br/> <img src="images/nonlinear/processing1.jpg"></img>
+<br/>We isolate the region of interest (ROI).
+<br/> <img src="images/nonlinear/processing2.jpg"></img>
+<br/>Just the green channel of the ROI (I later learned that [RGB -0.5*R -0.5*B] is a better way of obtaining green color information).
+<br/> <img src="images/nonlinear/processing3.jpg"></img>
+<br/>Adjusting for full dynamic range.
+<br/> <img src="images/nonlinear/processing4.jpg"></img>
+<br/>A threshold allows us to isolate the marker.
+<br/> <img src="images/nonlinear/processing5.jpg"></img>
+<br/>Finally we have the location of the markers in all the frames.
+<br/> <img src="images/nonlinear/dampeddata.jpg"></img>
+<br/>Here's an example of the quality of the data you can extract from this simple setup.
 </p>
